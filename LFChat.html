@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Launch Festival Combined Chats</title>
+        <style>
+          iframe {
+            border: 1px solid #ccc;
+          }
+          #container {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            width: 400px;
+            text-align:center;
+          }
+          button {
+          margin: 10px;
+          padding: 5px 5px;
+          }
+          .hc {
+          background-color: gray;
+          margin: 2px;
+          padding: 10px 2px 5px 0px;
+          border: 1px solid black;
+          }
+        </style>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        <script src="jquery.hipchat.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="hc-container3" class="hc"></div>
+            <div id="hc-container4" class="hc"></div>
+            <div id="hc-container1" class="hc"></div>
+            <div id="hc-container2" class="hc"></div>
+        </div>
+
+        <script>
+            $(function() {
+                $( "#hc-container1" ).draggable();
+                $( "#hc-container2" ).draggable();
+                $( "#hc-container3" ).draggable();
+                $( "#hc-container4" ).draggable();
+            });
+            $(function () {
+                $('#hc-container1').hipChatPanel({
+                    url: 'hipchat.com/gBpvpNOkE',
+                    timezone: 'PST',
+                    buttonTitle: 'Launch Festival Hackathon Chat'
+                });
+            });
+
+            $(function () {
+                $('#hc-container2').hipChatPanel({
+                    url: 'hipchat.com/gLFBzxns7',
+                    timezone: 'PST',
+                    buttonTitle: 'Launch Festival Customer Support'
+                });
+            });
+
+            $(function () {
+                $('#hc-container3').hipChatPanel({
+                    url: 'hipchat.com/gitkvpDmx',
+                    timezone: 'PST',
+                    buttonTitle: 'Launch Festival Main Stage'
+                });
+            });
+
+            $(function () {
+                $('#hc-container4').hipChatPanel({
+                    url: 'hipchat.com/gdaBcaHLB',
+                    timezone: 'PST',
+                    buttonTitle: 'Launch Festival AMA Stage'
+                });
+            });
+        </script>
+    </body>
+</html>
