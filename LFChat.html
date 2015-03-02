@@ -5,26 +5,26 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Launch Festival Combined Chats</title>
         <style>
-          iframe {
-            border: 1px solid #ccc;
-          }
-          #container {
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 100px;
-            width: 400px;
-            text-align:center;
-          }
-          button {
-          margin: 10px;
-          padding: 5px 5px;
-          }
-          .hc {
-          background-color: gray;
-          margin: 2px;
-          padding: 10px 2px 5px 0px;
-          border: 1px solid black;
-          }
+            iframe {
+                border: 1px solid #ccc;
+            }
+            .container {
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                width: 400px;
+                text-align:center;
+            }
+            button {
+                margin: 10px;
+                padding: 5px 5px;
+            }
+            .hc {
+                background-color: gray;
+                margin: 2px;
+                padding: 10px 2px 5px 0px;
+                border: 1px solid black;
+            }
         </style>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
@@ -32,7 +32,9 @@
         <script src="jquery.hipchat.js"></script>
     </head>
     <body>
-        <div id="container">
+        <div class="container">
+            Click the buttons to launch the various chats, drag the gray border to relocate.<br /><br />
+        
             <div id="hc-container3" class="hc"></div>
             <div id="hc-container4" class="hc"></div>
             <div id="hc-container1" class="hc"></div>
@@ -78,5 +80,14 @@
                 });
             });
         </script>
+    
+        <footer>
+            <div class="container">
+                <br /><br />
+                Sorry this page and my code are ugly, I threw it together using the <a href="https://bitbucket.org/atlassianlabs/jquery-hipchat-plugin/">Hipchat jQuery plugin.</a>
+                <br /><br />
+                Make it better, it's open sourced and available at <a href="https://github.com/alexwaters/LaunchFestivalChat"><img src="https://octodex.github.com/images/nyantocat.gif" height="30px"/></a>
+            </div>
+        </footer>
     </body>
 </html>
